@@ -1,0 +1,10 @@
+@import url(/styles/reset.css);
+@import url(/styles/header.css);
+
+:root {
+    --azul-fundo: #0F1D37;
+}
+
+body {
+    background-color: var(--azul-fundo);
+}
