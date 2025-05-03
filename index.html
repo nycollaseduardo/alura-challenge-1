@@ -1,22 +1,48 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <title>AluraDev</title>
 </head>
+
 <body>
-    <header>
-        <span>
+
+    <header class="container__header">
+
+        <span class="container__logo__foto">
+            <div>
+                <label for="menu" class="container__foto__nome">
+                    <img src="/img/Photo.png" alt="Foto de Harry">
+                    <p class="nome">Harry</p>
+                </label>
+                <input type="checkbox" id="menu" class="menu" hidden>
+                <ul class="menu__lista">
+                    <li class="nome menu__lista__nome">Menu</li>
+                    <li>
+                        <a href="#" class="menu__lista__elementos">
+                            <div class="menu__lista__elementos__editor"></div>
+                            <p class="nome">Editor de código</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__lista__elementos">
+                            <div class="menu__lista__elementos__comunidade"></div>
+                            <p class="nome">Comunidade</p>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="search" name="pesquisa" class="pesquisa" placeholder="Busque por algo">
+                    </li>
+                </ul>
+            </div>
             <img src="img/Logo.svg" alt="Logo da AluraDev">
-            <input type="search" name="pesquisa" placeholder="Busque por algo">
-        </span>
-        <span>
-            <img src="/img/Photo.png" alt="Foto de Harry">
-            <p>Harry</p>
         </span>
     </header>
+
     <main>
 
     </main>

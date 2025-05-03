@@ -1,0 +1,58 @@
+.container__header {
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.container__logo__foto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__foto__nome {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.menu__lista {
+    display: none;
+}
+
+.menu:checked ~ .menu__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    position: absolute;
+    top: 135%;
+}
+
+.menu__lista__elementos {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu__lista__elementos__editor {
+    background-image: url(/img/Editor_apagado.png);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+}
+
+.menu__lista__elementos__editor:active {
+    background-image: url(/img/Editor.png);
+}
+
+.menu__lista__elementos__comunidade {
+    background-image: url(/img/Comunidade_apagado.png);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+}
+
+.menu__lista__elementos__comunidade:active {
+    background-image: url(/img/Comunidade.png);
+}
