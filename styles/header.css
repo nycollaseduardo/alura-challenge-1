@@ -1,5 +1,5 @@
 .container__header {
-    margin: 3vw;
+    margin: 5vw;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -12,6 +12,7 @@
 }
 
 .container__foto__nome {
+    margin-top: -1vh;
     display: flex;
     align-items: center;
     gap: 10%;
@@ -22,6 +23,9 @@
 }
 
 .menu:checked ~ .menu__lista {
+    margin-left: -1.5vw;
+    padding: 50vh 5vw 0 0;
+    background-color: var(--azul-fundo);
     display: flex;
     flex-direction: column;
     gap: 2vh;

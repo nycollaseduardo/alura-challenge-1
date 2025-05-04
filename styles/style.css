@@ -1,12 +1,15 @@
 @import url(/styles/reset.css);
 @import url(/styles/header.css);
+@import url(/styles/main.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     --azul-fundo: #0F1D37;
     --fonte: "Inter", sans-serif;
     --branco-fonte: #FFFFFF;
+    --cinza-fonte: #B0B9C5;
     --azul-pesquisa: #364561;
+    --azul-botao: #5081FB;
 }
 
 body {
@@ -17,17 +20,13 @@ body {
     background-color: var(--azul-pesquisa);
     border: 1px solid var(--azul-pesquisa);
     border-radius: 0.2rem;
-    padding: 0.5em;
-    width: 94vw;
+    padding: 1em 0.5em;
+    width: 90vw;
     color: var(--branco-fonte);
-}
-
-.menu:checked ~ .pesquisa {
-    width: 25vw;
 }
 
 .pesquisa::placeholder {
-    color: var(--branco-fonte);
+    color: var(--cinza-fonte);
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 1rem;
@@ -44,4 +43,11 @@ body {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+}
+
+.botao {
+    font-size: 0.75rem;
+    background-color: var(--azul-botao);
+    padding: 0.5em 0.25em;
+    width: 50vw;
 }

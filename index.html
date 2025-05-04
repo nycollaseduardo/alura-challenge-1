@@ -15,9 +15,8 @@
 
         <span class="container__logo__foto">
             <div>
-                <label for="menu" class="container__foto__nome">
-                    <img src="/img/Photo.png" alt="Foto de Harry">
-                    <p class="nome">Harry</p>
+                <label for="menu">
+                    <img src="img/Logo.svg" alt="Logo da AluraDev">
                 </label>
                 <input type="checkbox" id="menu" class="menu" hidden>
                 <ul class="menu__lista">
@@ -39,15 +38,41 @@
                     </li>
                 </ul>
             </div>
-            <img src="img/Logo.svg" alt="Logo da AluraDev">
+            <div class="container__foto__nome">
+                <img src="/img/Photo.png" alt="Foto de Harry">
+                <p class="nome">Harry</p>
+            </div>
         </span>
     </header>
 
     <main>
-
+        <section class="formularios">
+            <p class="nome menu__lista__nome">Seu projeto</p>
+            <input type="text" name="nome__projeto" class="pesquisa" placeholder="Nome do seu projeto">
+            <input type="text" name="descricao" class="pesquisa" placeholder="Descrição do seu projeto">
+            <p class="nome menu__lista__nome">Personalização</p>
+            <select class="pesquisa">
+                <option value="" class="pesquisa" disabled selected>Selecione a linguagem</option>
+                <option value="html" class="nome">HTML</option>
+                <option value="css" class="nome">CSS</option>
+                <option value="JavaScript" class="nome">JavaScript</option>
+            </select>
+            <input type="text" name="descricao" class="pesquisa" placeholder="Descrição do seu projeto">
+            <select class="pesquisa seletor">
+                <option value="" class="pesquisa" selected disabled>Selecione a cor</option>
+                <option value="#6BD1FF" class="seletor">Azul</option>
+                <option value="#6BFFB3" class="seletor">Verde</option>
+                <option value="#FF6B81" class="seletor">Vermelho</option>
+                <option value="#FFE26B" class="seletor">Amarelo</option>
+                <option value="#FFAD6B" class="seletor">Laranja</option>
+                <option value="#B76BFF" class="seletor">Roxo</option>
+            </select>
+            <input type="submit" value="Salvar projeto" class="nome botao">
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
